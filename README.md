@@ -3,9 +3,9 @@ For this project, you will create a functional CI/CD system which will deploy a 
 
 This project consists of three major parts that need to be done in order to successfully deploy an application as a product of CI/CD proccess. 
 The three main parts are:   
-             1. Setup Azure Cloud Shell and GitHub Actions
-             2. Setup Continuous Integration
-             3. Setup Continuous Delivery
+ 1. Setup Azure Cloud Shell and GitHub Actions
+ 2. Setup Continuous Integration
+ 3. Setup Continuous Delivery
 
 For the application to be succesfully deployed the above mentioned parts need to be done in the order they were listed.
 
