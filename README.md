@@ -1,6 +1,17 @@
 # Overview
+For this project, you will create a functional CI/CD system which will deploy a runnable Flask ML application using Azure Pipelines, Cloud Shell and GitHub Actions.
 
-<TODO: complete this with an overview of your project>
+This project consists of three major parts that need to be done in order to successfully deploy an application as a product of CI/CD proccess. 
+The three main parts are:   
+             1. Setup Azure Cloud Shell and GitHub Actions
+             2. Setup Continuous Integration
+             3. Setup Continuous Delivery
+
+For the application to be succesfully deployed the above mentioned parts need to be done in the order they were listed.
+
+    Setup of Azure Cloud Shell and GitHub Actions are defined under steps 4. to 6.
+    Setup of Continuous Integration is mentioned under steps 3. and 4.
+    Setup of Continuous Delivery instructions is mentioned here under steps 6. to 8. 
 
 ## Project Plan
 <TODO: Project Plan
@@ -10,8 +21,7 @@
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+* Architectural Diagram which represents key parts of the system and its workflow can be seen [here]()
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
