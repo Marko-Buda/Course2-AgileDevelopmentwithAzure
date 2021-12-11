@@ -16,10 +16,10 @@ For the application to be succesfully deployed the above mentioned parts need to
     Setup of Continuous Delivery instructions is mentioned here under steps 6. to 8. 
 
 ## Project Plan
-<TODO: Project Plan
+Includes project estimation for the whole year as well a trello board for the tracking of the current progress. 
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* A link to a Trello board for the project is [here](https://trello.com/b/NSTKhFFI/udacity-azure-cloud-devops-project-2)
+* A link to a spreadsheet that includes the original and final project plan is [here](https://docs.google.com/spreadsheets/d/1ONBoKr3c7egFtFZl26B8JdhEi5MHQT7c2NxBg6iAjeY/edit?usp=sharing)
 
 ## Instructions
 
@@ -43,13 +43,13 @@ Instructions for running the Python project are all listed in the order of execu
 
 
 
-* Project running on Azure App Service
+***Project running on Azure App Service** - [screenshot]().
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+***Successful deploy of the project in Azure Pipelines** - [screenshot]().
 
-* Running Azure App Service from Azure Pipelines automatic deployment
+***Running Azure App Service from Azure Pipelines automatic deployment** - [screenshot]().
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
+***Successful prediction from deployed flask app in Azure Cloud Shell** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/prediction_in_cloud_shell.png).
 The output should look similar to this:
 
 ```bash
@@ -58,9 +58,7 @@ Port: 443
 {"prediction":[20.35373177134412]}
 ```
 
-* Output of streamed log files from deployed application
-
-> 
+***Output of streamed log files from deployed application** - [screenshot]().
 
 ## Enhancements
 
