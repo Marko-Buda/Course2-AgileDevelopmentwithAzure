@@ -43,11 +43,11 @@ Instructions for running the Python project are all listed in the order of execu
 
 
 
-***Project running on Azure App Service** - [screenshot]().
+***Project running on Azure App Service** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/project_running_on_Azure_App_Service.png).
 
-***Successful deploy of the project in Azure Pipelines** - [screenshot]().
+***Successful deploy of the project in Azure Pipelines** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/deployment_of_the_project_in_Pipelines.png).
 
-***Running Azure App Service from Azure Pipelines automatic deployment** - [screenshot]().
+***Running Azure App Service from Azure Pipelines automatic deployment** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/running_app_service_from_Pipelines.png).
 
 ***Successful prediction from deployed flask app in Azure Cloud Shell** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/prediction_in_cloud_shell.png).
 The output should look similar to this:
@@ -58,7 +58,7 @@ Port: 443
 {"prediction":[20.35373177134412]}
 ```
 
-***Output of streamed log files from deployed application** - [screenshot]().
+***Output of streamed log files from deployed application** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/streamed_log_output.png).
 
 ## Enhancements
 
