@@ -1,4 +1,6 @@
 # Overview
+[![Python application test with Github Actions](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/actions/workflows/pythonapp.yml/badge.svg?branch=main)](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/actions/workflows/pythonapp.yml)
+
 For this project, you will create a functional CI/CD system which will deploy a runnable Flask ML application using Azure Pipelines, Cloud Shell and GitHub Actions.
 
 This project consists of three major parts that need to be done in order to successfully deploy an application as a product of CI/CD proccess. 
@@ -10,7 +12,7 @@ The three main parts are:
 For the application to be succesfully deployed the above mentioned parts need to be done in the order they were listed.
 
     Setup of Azure Cloud Shell and GitHub Actions are defined under steps 1. to 6.
-    Setup of Continuous Integration is mentioned under steps 3. and 4.
+    Setup of Continuous Integration is mentioned under steps 7. to 10.
     Setup of Continuous Delivery instructions is mentioned here under steps 6. to 8. 
 
 ## Project Plan
@@ -34,16 +36,14 @@ Instructions for running the Python project are all listed in the order of execu
 4. Copy public key from id_rsa.pub file and go to your Github repository
 5. Under repository ssttings select _Deploy keys_ and add your copied public key
 6. In Cloud Shell you can now clone your repository ( ***Project cloned into Azure Cloud Shell** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/Cloned_github_repository.png))
+7. Enter your repository in Cloud Shell by entering **_cd <name_of_your_repository>_** 
+8. Create project scaffolding. You can use this repository as it contains for running the project
+9. Run make all command and wait for it to finish. (***Passing tests that are displayed after running the `make all` command from the `Makefile`** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/make_all_passed_test.png))
+10. Add to your repository on GitHub the following file _.github/workflows/pythonapp.yml_ and wait for GitHub Actions to finish. (***Output of a test run** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/verify_remote_tests.png))
+
+
 
 * Project running on Azure App Service
-
-
-
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
-
-* Output of a test run
-
-* [![Python application test with Github Actions](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/actions/workflows/pythonapp.yml/badge.svg?branch=main)](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/actions/workflows/pythonapp.yml)
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
@@ -64,7 +64,6 @@ Port: 443
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
 * As can be seen from the Architectural Diagram ([here]()), the successfull execution of CI part is not a condition that needs to pass which would then trigger the execution of CD part. Currently the CD is also triggered on push change to a pull request
 * Instead of using GitHub Actions for CI in the future this could be changed so that the Azure Pipelines execute both Continuous Integration and Continuous Delivery
 in one cloud environment
