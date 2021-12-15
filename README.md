@@ -12,8 +12,8 @@ The three main parts are:
 For the application to be succesfully deployed the above mentioned parts need to be done in the order they were listed.
 
     Setup of Azure Cloud Shell and GitHub Actions are defined under steps 1. to 6.
-    Setup of Continuous Integration is mentioned under steps 7. to 10.
-    Setup of Continuous Delivery instructions is mentioned here under steps 11. to 19. 
+    Setup of Continuous Integration is mentioned under steps 7. to 11.
+    Setup of Continuous Delivery instructions is mentioned here under steps 12. to 22. 
 
 ## Project Plan
 Includes project estimation for the whole year as well a trello board for the tracking of the current progress. 
@@ -33,21 +33,24 @@ Instructions for running the Python project are all listed in the order of execu
 2. Launch Azure Cloud Shell environment by clicking on the first icon located next to the Azure search bar (the bar is on the top of Azure page) 
 3. In Cloud Shell enter command **_ssh-keygen_**. This creates public rsa key located on path _~/.ssh_.
 4. Copy public key from id_rsa.pub file and go to your Github repository
-5. Under repository ssttings select _Deploy keys_ and add your copied public key
+5. Under repository settings select _Deploy keys_ and add your copied public key
 6. In Cloud Shell you can now clone your repository ( ***Project cloned into Azure Cloud Shell** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/Cloned_github_repository.png))
 7. Enter your repository in Cloud Shell by entering **_cd <name_of_your_repository>_** 
 8. Create project scaffolding. You can use this repository as it contains for running the project
-9. Run make all command and wait for it to finish. (***Passing tests that are displayed after running the `make all` command from the `Makefile`** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/make_all_passed_test.png))
-10. Add to your repository on GitHub the following file _.github/workflows/pythonapp.yml_ and wait for GitHub Actions to finish. (***Output of a test run** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/verify_remote_tests.png))
-11. Go to Azure Devops page and select _New project_ on the organization page
-12. Give the project a name and select _Create_. This will create a new project in your organization page
-13. From the new project page, select _Project settings_ from the left sidebar navigation add go to _Pipelines_
-14. Under _Service connections_, select _New service connection_ and then continue with the setup of connection between Azure DevOps and Pipelines
-15. Now that those services are connected, return to _Pipelines_ sidebar and select _Create Pipeline_
-16. After that select _GitHub_ as your platform for hosting source code and enter your login data for _GitHub_
-17. Select your github repository that you created for this project 
-18. On the next tab _Configure your pipeline screen_ select _Python to Linux Web App on Azure_
-19. Following this click on _Approve and install_. _Azure Pipelines_ will now run for the first time and it will deploy project application
+9. Enter the commands **_python3 -m venv ~/.myrepo_** and **_source ~/.myrepo/bin/activate_**
+10. Run make all command and wait for it to finish. (***Passing tests that are displayed after running the `make all` command from the `Makefile`** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/make_all_passed_test.png))
+11. Add to your repository on GitHub the following file _.github/workflows/pythonapp.yml_ and wait for GitHub Actions to finish. (***Output of a test run** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/verify_remote_tests.png))
+12. In your current location in directory execute **_./commands.sh_**
+13. In a new Azure Cloud Shell terminal run the following command **_az webapp log tail_** to view the current logs of our web application
+14. Go to Azure Devops page and select _New project_ on the organization page
+15. Give the project a name and select _Create_. This will create a new project in your organization page
+16. From the new project page, select _Project settings_ from the left sidebar navigation add go to _Pipelines_
+17. Under _Service connections_, select _New service connection_ and then continue with the setup of connection between Azure DevOps and Pipelines
+18. Now that those services are connected, return to _Pipelines_ sidebar and select _Create Pipeline_
+19. After that select _GitHub_ as your platform for hosting source code and enter your login data for _GitHub_
+20. Select your github repository that you created for this project 
+21. On the next tab _Configure your pipeline screen_ select _Python to Linux Web App on Azure_ and finish by clicking on _Save and run_
+22. Following this click on _Approve and install_. _Azure Pipelines_ will now run for the first time and it will update the deployed project application
 
 
 ***Project running on Azure App Service** - [screenshot](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/project_running_on_Azure_App_Service.png).
@@ -76,6 +79,6 @@ in one cloud environment
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+Link to the demo set on YouTube - https://www.youtube.com/watch?v=dYLy5UmsjXw
 
 
