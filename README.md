@@ -24,7 +24,7 @@ Includes project estimation for the whole year as well a trello board for the tr
 ## Instructions
 
 Before going through instructions for how to successfully deploy this project, please take a look at the 
-* Architectural Diagram which represents key parts of the system and its workflow can be seen [here]()
+* Architectural Diagram which represents key parts of the system and its workflow can be seen [here](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/architecture_diagram.drawio.png)
 
 
 Instructions for running the Python project are all listed in the order of execution.
@@ -72,7 +72,7 @@ Port: 443
 
 ## Enhancements
 
-* As can be seen from the Architectural Diagram ([here]()), the successfull execution of CI part is not a condition that needs to pass which would then trigger the execution of CD part. Currently the CD is also triggered on push change to a pull request
+* As can be seen from the Architectural Diagram ([here](https://github.com/Marko-Buda/Course2-AgileDevelopmentwithAzure/blob/main/screenshots/architecture_diagram.drawio.png)), the successfull execution of CI part is not a condition that needs to pass which would then trigger the execution of CD part. Currently the CD is also triggered on push change to a pull request
 * Instead of using GitHub Actions for CI in the future this could be changed so that the Azure Pipelines execute both Continuous Integration and Continuous Delivery
 in one cloud environment
 
